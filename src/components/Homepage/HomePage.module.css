@@ -1,0 +1,47 @@
+.agentList {
+  padding: 25px;
+  text-align: center;
+}
+
+.agents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/**/
+
+.weaponList {
+  padding: 25px;
+  text-align: center;
+}
+
+.weapons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/**/
+
+.mapList {
+  padding: 25px;
+  text-align: center;
+}
+
+.maps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import store from "./store";
+import { Provider } from "react-redux";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Weapons from "./components/Weapons/Weapons";
+import Agents from "./components/Agents/Agents";
+import Maps from "./components/Maps/Maps";
+
+import Home from "./Home";
+
+import Header from "./components/Header/Header";
+
+import NotFound from "./components/404/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Header>Wikipedia</Header>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/weapons" element={<Weapons />} />
+          <Route path="/agents" element={<Agents />} />
+          <Route path="/maps" element={<Maps />} />
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </Provider>
   );
 }
 

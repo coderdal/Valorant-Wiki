@@ -1,0 +1,22 @@
+.agentList {
+  padding: 25px;
+}
+
+.agents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 950px) {
+  .sectionTitle {
+    margin-left: 150px;
+  }
+}

@@ -1,0 +1,40 @@
+.weaponList {
+  padding: 25px;
+  text-align: center;
+}
+
+.weapons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.itemAgent {
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  width: 330px;
+}
+
+.itemAgent a {
+  text-decoration: none;
+  color: #000;
+}
+
+.pageTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.displayImg img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.displayImg img {
+  width: 100%;
+  height: 100%;
+}
